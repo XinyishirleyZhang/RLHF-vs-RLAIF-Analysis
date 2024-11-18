@@ -41,7 +41,7 @@ Audience Engagement Question: What factors do you think contribute to RLAIF’s 
 
 ### Model and Approach
 
-This study builds upon the methodology presented in “RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback” (Lee et al., 2024), extending the investigation to small-model settings. The research compares Reinforcement Learning from Human Feedback (RLHF) and Reinforcement Learning from AI Feedback (RLAIF) using the Dahoas/full-hh-rlhf dataset.
+This study builds upon the methodology presented in “RLAIF vs. RLHF: Scaling Reinforcement Learning from Human Feedback with AI Feedback” (Lee et al., 2024), extending the investigation to small-model settings. The research compares Reinforcement Learning from Human Feedback (RLHF) and Reinforcement Learning from AI Feedback (RLAIF) using the Dahoas/rm-static dataset.
 
 <img width="1150" alt="Screenshot 2024-11-17 at 14 49 07" src="https://github.com/user-attachments/assets/b15ce5ad-5162-468c-a8a3-8ede690c5a16">
 
@@ -59,7 +59,7 @@ Both models are trained for three epochs using a batch size of 4.
 ### Pseudocode
 
 #### Step 1: Data Preparation
-Load dataset from "Dahoas/full-hh-rlhf"
+Load dataset from "Dahoas/rm-static"
 Tokenize 'prompt', 'chosen', and 'rejected' fields
 For RLHF: Set target = chosen
 For RLAIF: Set target = rejected
